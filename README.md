@@ -1,44 +1,40 @@
-# Naruto API 🌪️
+# 🌪️ Naruto API - Interfaz Web
 
-Una API RESTful no oficial que proporciona información detallada sobre el universo de Naruto. Incluye datos sobre personajes, clanes, aldeas, habilidades y más.
+Una aplicación web simple que consume una API REST no oficial del universo de Naruto. Permite consultar información sobre personajes, clanes, aldeas, técnicas y más, utilizando `fetch` en JavaScript para hacer peticiones a la API.
 
 ## 🚀 Características
 
-- Obtener lista completa de personajes.
-- Consultar clanes, aldeas y sus miembros.
-- Información sobre jutsus, tipos de chakra y rangos ninja.
-- Búsqueda por nombre o ID.
-- Soporte para filtros y paginación.
+- Listado de personajes de Naruto.
+- Búsqueda de personajes por nombre.
+- Consulta de clanes, aldeas y técnicas ninja (jutsus).
+- Interfaz ligera usando HTML, CSS y JavaScript puro (vanilla JS).
+- Uso de `fetch()` para obtener datos desde una API pública.
 
-## 🔗 Endpoints Principales
+## 🧩 Estructura del Proyecto
 
-### 🧍‍♂️ Personajes
-- `GET /api/characters` — Lista de personajes.
-- `GET /api/characters/:id` — Detalle de un personaje específico.
-- `GET /api/characters?name=naruto` — Buscar por nombre.
+naruto-api-web/
+├── index.html # Interfaz principal
+├── style.css # Estilos básicos
+└── script.js # Lógica de conexión con la API y manejo del DOM
 
-### 🧬 Clanes
-- `GET /api/clans` — Lista de clanes.
-- `GET /api/clans/:id` — Detalle de un clan.
+## 🔗 Ejemplos de Endpoints Usados (API externa)
 
-### 🏯 Aldeas
-- `GET /api/villages` — Lista de aldeas.
-- `GET /api/villages/:id` — Detalle de una aldea.
+- `GET https://api.example.com/characters` — Lista de personajes
+- `GET https://api.example.com/characters?name=naruto` — Buscar personaje por nombre
+- `GET https://api.example.com/clans` — Lista de clanes
+- `GET https://api.example.com/villages` — Lista de aldeas
+- `GET https://api.example.com/jutsus` — Lista de jutsus
 
-### 🥋 Jutsus
-- `GET /api/jutsus` — Lista de técnicas.
-- `GET /api/jutsus/:id` — Detalle de un jutsu.
+> ⚠️ Nota: Esta aplicación **no crea una API**, solo la **consume** desde el navegador.
 
-## 🛠️ Tecnologías Usadas
+## 💻 Cómo usar
 
-- Node.js + Express
-- MongoDB (o cualquier otra base de datos, dependiendo de tu proyecto)
-- Swagger (para documentación interactiva, opcional)
+1. Clona el repositorio:
+   ```bash
+  git@github.com:palmalion1980/Api-Naruto.git
+Abre el archivo index.html en tu navegador.
 
-## 📦 Instalación
+¡Y listo! Puedes comenzar a explorar el mundo ninja desde tu navegador.
 
-```bash
-git clone https://github.com/tuusuario/naruto-api.git
-cd naruto-api
-npm install
-npm start
+📄 Licencia
+Este proyecto es solo con fines educativos y de práctica. No está afiliado oficialmente con la franquicia Naruto.
